@@ -4,8 +4,15 @@ import java.io.FilterInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 
-/**
- * 复制glide源码用于减少流转换byte[]开销 减少内存消耗
+/*
+ * -----------------------------------------------------------------
+ * Copyright (C) 2018-2028, by Victor, All rights reserved.
+ * -----------------------------------------------------------------
+ * File: tt
+ * Author: Victor
+ * Date: 2023/11/15 15:39
+ * Description:复制glide源码用于减少流转换byte[]开销 减少内存消耗
+ * -----------------------------------------------------------------
  */
 public class BufferedInputStreamWrap extends FilterInputStream {
     /**

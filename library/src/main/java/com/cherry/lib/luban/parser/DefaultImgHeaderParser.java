@@ -12,9 +12,17 @@ import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
 import java.nio.charset.Charset;
 
-/**
- * A class for parsing the exif orientation and other data from an image header.
+/*
+ * -----------------------------------------------------------------
+ * Copyright (C) 2018-2028, by Victor, All rights reserved.
+ * -----------------------------------------------------------------
+ * File: tt
+ * Author: Victor
+ * Date: 2023/11/15 15:39
+ * Description:A class for parsing the exif orientation and other data from an image header.
+ * -----------------------------------------------------------------
  */
+
 public final class DefaultImgHeaderParser implements ImgHeaderParser {
 
     // Due to https://code.google.com/p/android/issues/detail?id=97751.

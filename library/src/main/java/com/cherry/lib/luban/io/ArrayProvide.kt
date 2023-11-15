@@ -2,11 +2,15 @@ package com.cherry.lib.luban.io
 
 import com.cherry.lib.luban.Checker
 
-
-/**
- * @description: 利用glide提供byte数组来节约内存
- * @author: forjrking
- * @date: 2020/10/10 10:26 AM
+/*
+ * -----------------------------------------------------------------
+ * Copyright (C) 2018-2028, by Victor, All rights reserved.
+ * -----------------------------------------------------------------
+ * File: tt
+ * Author: Victor
+ * Date: 2023/11/15 15:39
+ * Description: 利用glide提供byte数组来节约内存
+ * -----------------------------------------------------------------
  */
 object ArrayProvide {
 

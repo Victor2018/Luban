@@ -17,12 +17,16 @@ import java.io.File
 import java.io.IOException
 import java.io.InputStream
 import kotlin.jvm.Throws
-/**
- * @Des: 工具类的方法 内部持有Context通过反射获取的ApplicationContext
- * @Author: forjrking
- * @Time: 2021/6/18 6:23 下午
- * @Version: 1.0.0
- **/
+/*
+ * -----------------------------------------------------------------
+ * Copyright (C) 2018-2028, by Victor, All rights reserved.
+ * -----------------------------------------------------------------
+ * File: Checker
+ * Author: Victor
+ * Date: 2023/11/15 15:39
+ * Description: 工具类的方法 内部持有Context通过反射获取的ApplicationContext
+ * -----------------------------------------------------------------
+ */
 @SuppressLint("StaticFieldLeak")
 internal object Checker {
 

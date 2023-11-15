@@ -17,9 +17,14 @@ import kotlin.math.ceil
 import kotlin.math.max
 import kotlin.math.min
 
-/**
- * @Des: 向下采样压缩引擎 主要有临近采样和双线性采样2种压缩方式,会改变图片原有分辨率,质量压缩会大幅度压缩大小但是会损失图片质量
- *
+/*
+ * -----------------------------------------------------------------
+ * Copyright (C) 2018-2028, by Victor, All rights reserved.
+ * -----------------------------------------------------------------
+ * File: tt
+ * Author: Victor
+ * Date: 2023/11/15 15:39
+ * Description:
  * 双线性采样压缩更加适合纯文字图片的压缩,缺点就是必须加载进内存中
  * Matrix matrix = new Matrix();
  * matrix.setScale(scale, scale); // 压缩系数 0.5 即原来 1/2
@@ -31,11 +36,8 @@ import kotlin.math.min
  * Bitmap tagBitmap = BitmapFactory.decodeStream(stream, null, options);
  *
  * JPEG 图像没有alpha 如果使用ARGB_888 后续加载进入内存会浪费alpha 所以必须根据原图像数据处理需要压缩后的图像
- * @Author: 岛主
- * @Time:  2020/10/8
- * @Version: 1.0.0
- * <lp>
-</lp> */
+ * -----------------------------------------------------------------
+ */
 class CompressEngine constructor(
     private val srcStream: InputStreamProvider<*>, private val resFile: File,
     private val compress4Sample: Boolean = true, private val maxSize: Long = 0,

@@ -4,7 +4,17 @@ import android.graphics.Bitmap
 import java.io.IOException
 import java.io.InputStream
 
-/** Interface for the ImageHeaderParser.  */
+/*
+ * -----------------------------------------------------------------
+ * Copyright (C) 2018-2028, by Victor, All rights reserved.
+ * -----------------------------------------------------------------
+ * File: tt
+ * Author: Victor
+ * Date: 2023/11/15 15:39
+ * Description:
+ * -----------------------------------------------------------------
+ */
+
 interface ImgHeaderParser {
 
     @Throws(IOException::class)

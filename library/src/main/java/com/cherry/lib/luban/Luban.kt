@@ -25,11 +25,15 @@ import java.util.concurrent.TimeUnit
 import java.util.concurrent.atomic.AtomicInteger
 import kotlin.collections.ArrayList
 import kotlin.jvm.Throws
-
-/**
- * @description:
- * @author: forjrking
- * @date: 2020/10/10 3:58 PM
+/*
+ * -----------------------------------------------------------------
+ * Copyright (C) 2018-2028, by Victor, All rights reserved.
+ * -----------------------------------------------------------------
+ * File: Luban
+ * Author: Victor
+ * Date: 2023/11/15 15:39
+ * Description:
+ * -----------------------------------------------------------------
  */
 class Luban private constructor(private val owner: LifecycleOwner) {
 
