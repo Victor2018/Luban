@@ -1,7 +1,7 @@
 plugins {
     id("com.android.library")
     id("org.jetbrains.kotlin.android")
-    id("maven-publish") // 引入 maven 插件
+    id("maven-publish")
 }
 
 android {
@@ -36,6 +36,7 @@ android {
 dependencies {
 
     implementation("androidx.core:core-ktx:1.9.0")
+    implementation(platform("org.jetbrains.kotlin:kotlin-bom:1.8.0"))
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("com.google.android.material:material:1.8.0")
     testImplementation("junit:junit:4.13.2")
@@ -59,7 +60,7 @@ afterEvaluate {
         publications {
             register<MavenPublication>("release") {
                 from(components["release"])
-                        groupId = "com.github.Victor2018" //groupId 随便取
+                groupId = "com.github.Victor2018" //groupId 随便取
                 artifactId = "cherry"  //artifactId 随便取
                 version = "1.0.0"
             }
